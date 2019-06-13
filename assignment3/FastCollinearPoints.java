@@ -23,7 +23,7 @@ public class FastCollinearPoints {
 
 		lineSegments = new ArrayList<>();
 		for (Point point : points) {
-			Arrays.sort(pointsCopy);
+			Arrays.sort(pointsCopy); // can you please explain why this line is necessary ? Since the pointCopy is sorted by the comparator next.
 			Arrays.sort(pointsCopy, point.slopeOrder());
 			int first = 0;
 			int last = 0;
